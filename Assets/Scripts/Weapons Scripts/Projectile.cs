@@ -29,6 +29,6 @@ public class Projectile : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(0f, speed * Time.deltaTime, 9f);
+        transform.Translate(0f, speed * Time.deltaTime, 0f);
     }
 }

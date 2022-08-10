@@ -97,7 +97,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.007755086, y: 0.10561736}
@@ -133,7 +133,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &217053178099709220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,5 +150,5 @@ MonoBehaviour:
   minDamage: 9
   maxDamage: 9
   spawnSound: {fileID: 8300000, guid: 796c313b38dce8d458061c022b9abddd, type: 3}
-  boomEffect: {fileID: 0}
+  boomEffect: {fileID: 8674729047030963636, guid: 88e11e12237754da3ad6829de2d2c103, type: 3}
   destroySound: {fileID: 0}
