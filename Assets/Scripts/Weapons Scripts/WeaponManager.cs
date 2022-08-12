@@ -6,7 +6,7 @@ public class WeaponManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] _projectiles;
     [SerializeField] private Transform[] _projectileSpawnPoints;
-    [SerializeField] private float _shootTimerThreshold = 0.2f;
+    [SerializeField] private float _shootWaitTime = 0.2f;
 
     private float _shootTimer;
     private bool _canShoot;
@@ -74,7 +74,7 @@ public class WeaponManager : MonoBehaviour
     void ResetShootingTimer()
     {
         _canShoot = false;
-        _shootTimer = Time.time + _shootTimerThreshold;
+        _shootTimer = Time.time + _shootWaitTime;
     }
 
 }

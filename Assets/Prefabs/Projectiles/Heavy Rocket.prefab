@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3777675041497429015}
   - component: {fileID: 3777675041497429014}
   - component: {fileID: 3777675041497429017}
+  - component: {fileID: -711823910339435646}
   m_Layer: 6
   m_Name: Heavy Rocket
   m_TagString: Projectile
@@ -152,3 +153,16 @@ MonoBehaviour:
   spawnSound: {fileID: 8300000, guid: 4e4edf3d2672cea49a1bd25e549f9d28, type: 3}
   boomEffect: {fileID: 4660563033224423487, guid: 6d52b5f4fbd944726ba966534ac005ac, type: 3}
   destroySound: {fileID: 8300000, guid: cef28ad044b48624fbfeba734e9d6447, type: 3}
+--- !u!114 &-711823910339435646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3777675041497429016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd4a2f54283444e3a6fc203e17aea2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timer: 3

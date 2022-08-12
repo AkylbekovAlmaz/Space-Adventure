@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3809144172802918702}
   - component: {fileID: 3809144172802918703}
   - component: {fileID: 3809144172802918700}
+  - component: {fileID: 4965392987159303480}
   m_Layer: 6
   m_Name: Misile
   m_TagString: Projectile
@@ -152,3 +153,16 @@ MonoBehaviour:
   spawnSound: {fileID: 8300000, guid: 4e4edf3d2672cea49a1bd25e549f9d28, type: 3}
   boomEffect: {fileID: 1516502056755872, guid: b32acdabb4f7b7342ad2dff9986cb44f, type: 3}
   destroySound: {fileID: 8300000, guid: 46bcc371f599a62428eb964fb644457c, type: 3}
+--- !u!114 &4965392987159303480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3809144172802918701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd4a2f54283444e3a6fc203e17aea2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timer: 4

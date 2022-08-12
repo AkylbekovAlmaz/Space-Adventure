@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5485016651700769274}
   - component: {fileID: 5485016651700769273}
   - component: {fileID: 5485016651700769272}
+  - component: {fileID: -3122495105413154457}
   m_Layer: 6
   m_Name: Blaster 2
   m_TagString: Projectile
@@ -152,3 +153,16 @@ MonoBehaviour:
   spawnSound: {fileID: 8300000, guid: 3e8cc2776d3a7504187923a001952b42, type: 3}
   boomEffect: {fileID: 8674729047030963636, guid: 32fc0224970b948648f761b41070ede2, type: 3}
   destroySound: {fileID: 0}
+--- !u!114 &-3122495105413154457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5485016651700769271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd4a2f54283444e3a6fc203e17aea2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timer: 3
