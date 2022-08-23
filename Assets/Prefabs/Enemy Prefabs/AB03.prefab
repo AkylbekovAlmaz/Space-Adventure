@@ -43,6 +43,10 @@ GameObject:
   - component: {fileID: 3189109488188184446}
   - component: {fileID: 8294573502458410155}
   - component: {fileID: 5365343134216702512}
+  - component: {fileID: 872090071}
+  - component: {fileID: 872090072}
+  - component: {fileID: 872090077}
+  - component: {fileID: 872090078}
   m_Layer: 8
   m_Name: AB03
   m_TagString: Enemy
@@ -166,6 +170,87 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.4526453, y: 9.08995}
   m_EdgeRadius: 0
+--- !u!114 &872090071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8928671545794021520}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614fe006e979d4b75a717f0f2a2b1c75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveOnX: 0
+  moveOnY: 1
+  moveSpeed: 8
+  horizontalMovementTreshold: 8
+  verticallMovementTreshold: 6
+--- !u!114 &872090072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8928671545794021520}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6a25552901974bef97a25b330e9b46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  moveSpeed: 8
+  moveRandomly: 1
+--- !u!114 &872090077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8928671545794021520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a07aeb807d6449da9edb85ad094b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: -50
+  maxX: 50
+  minY: 9
+  maxY: 27
+--- !u!114 &872090078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8928671545794021520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6e0e0b8784b647e2ab78239c36ed85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1461741120264219226, guid: 26ba091e73b574062827ec48947cda10, type: 3}
+  projectilePool: []
+  keyToPressToShoot: 0
+  projectileSpawnPoint: {fileID: 8457612214323969326}
+  shootWaitTime: 0.8
+  isEnemy: 1
 --- !u!1001 &443260846882402652
 PrefabInstance:
   m_ObjectHideFlags: 0
