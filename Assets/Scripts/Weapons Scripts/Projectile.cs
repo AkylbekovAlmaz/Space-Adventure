@@ -38,12 +38,13 @@ public class Projectile : MonoBehaviour
 
         if (collision.CompareTag(TagManager.PLAYER_TAG))
         {
-            Debug.Log("Player Hit");
+
         }
 
         if (collision.CompareTag(TagManager.ENEMY_TAG) || collision.CompareTag(TagManager.METEOR_TAG))
         {
-            Debug.Log("Enemy HIT");
+
+            collision.GetComponent<EnemyHealth>().TakeDamage(projectileDamage, 0f);
         }
 
         if (!collision.CompareTag(TagManager.UNTAGGED_TAG) &&

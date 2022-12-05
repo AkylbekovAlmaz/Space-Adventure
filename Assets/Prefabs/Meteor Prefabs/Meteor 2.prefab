@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8614766911001718237}
   - component: {fileID: 8614766911001718236}
   - component: {fileID: 9079183017359659374}
+  - component: {fileID: 6270230032467602177}
   m_Layer: 8
   m_Name: Meteor 2
   m_TagString: Meteor
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1373513109
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f8132881689998f4a9857abee6536e18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -255,3 +256,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a26c5b2e75ab48d9bd3148dc78f2fe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minSpeed: 4
+  maxSpeed: 10
+  minRotationSpeed: 15
+  maxRotationSpeed: 50
+--- !u!114 &6270230032467602177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8614766911001718235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2051046e89ab548e6b4b0747b82d860a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  health: 100
+  destroyEffect: {fileID: 1519377103190442, guid: 0579293ac60a84b4b90e9ac25c93b30e, type: 3}
+  hitEffect: {fileID: 1319861625924068, guid: 494f5858d0b1f415ea3401e84732aa08, type: 3}

@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2517964406832568959}
   - component: {fileID: 7433301229393153052}
   m_Layer: 0
-  m_Name: Health Bar BG (1)
+  m_Name: Health Bar BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -216,6 +216,7 @@ GameObject:
   - component: {fileID: 872090072}
   - component: {fileID: 872090077}
   - component: {fileID: 872090078}
+  - component: {fileID: 9221667840906395054}
   m_Layer: 8
   m_Name: AB03
   m_TagString: Enemy
@@ -421,6 +422,22 @@ MonoBehaviour:
   projectileSpawnPoint: {fileID: 8457612214323969326}
   shootWaitTime: 0.8
   isEnemy: 1
+--- !u!114 &9221667840906395054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8928671545794021520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2051046e89ab548e6b4b0747b82d860a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1797466526141744587}
+  health: 100
+  destroyEffect: {fileID: 1762303578077224, guid: 9685a397aac114db9889c2a983af24e6, type: 3}
+  hitEffect: {fileID: 1705349776823396, guid: 541b040e168f245cf9f2f510780440fd, type: 3}
 --- !u!1001 &443260846882402652
 PrefabInstance:
   m_ObjectHideFlags: 0
