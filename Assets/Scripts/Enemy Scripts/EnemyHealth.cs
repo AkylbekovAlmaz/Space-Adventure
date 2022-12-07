@@ -13,6 +13,13 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private GameObject destroyEffect;
     [SerializeField] private GameObject hitEffect;
 
+    private DropCollectable dropCollectable;
+
+    private void Awake()
+    {
+        dropCollectable = GetComponent<DropCollectable>();
+    }
+
     public void TakeDamage(float damageAmount, float damageResistance)
     {
         damageAmount -= damageResistance;
@@ -21,7 +28,21 @@ public class EnemyHealth : MonoBehaviour
         if (health <= 0)
         {
             Instantiate(destroyEffect, transform.position, Quaternion.identity);
+
+            if (gameObject.CompareTag(TagManager.ENEMY_TAG))
+            {
+                GameplayUIController.instance.SetInfo(2);
+                EnemySpawner.instance.CheckToSpawnNewWave(gameObject);
+
+            } else if (gameObject.CompareTag(TagManager.METEOR_TAG))
+            {
+                GameplayUIController.instance.SetInfo(3);
+            }
+
             SoundManager.instance.PlayDestroySound();
+
+            dropCollectable.CheckToSpawnCollectable();
+
             Destroy(gameObject);
 
         } else

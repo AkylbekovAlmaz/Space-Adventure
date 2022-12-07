@@ -8,6 +8,7 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] private GameObject[] enemies;
 
+    [SerializeField]
     private List<GameObject> spawnedEnemies = new List<GameObject>();
 
     [SerializeField] private Transform[] spawnPoints;
@@ -41,6 +42,7 @@ public class EnemySpawner : MonoBehaviour
         }
 
         //Inform UI about wave number
+        GameplayUIController.instance.SetInfo(1);
     }
 
     IEnumerator _SpawnWave(float waitTime)
